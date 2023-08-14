@@ -8,7 +8,7 @@ const io = new Server(server, {pingInterval: 2000, pingTimeout:5000});
 
 const port = 3000;
 
-app.use(express.static("../"))
+app.use(express.static("./"))
 
 app.get('/', (req, res)=>{
     res.sendFile(__dirname+'/index.html')
