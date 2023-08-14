@@ -1,0 +1,38 @@
+@font-face {
+    font-family: pixel;
+    src: url("https://dl.dropboxusercontent.com/s/hsdwvz761xqphhb/pixel.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(44, 89, 117);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto; 
+    transform: scale(3) translateY(40%);
+}
+
+#player-form {
+    height: 10%;
+    display: flex;
+}
+
+#player-form #name{
+    width: 45%;
+}
+
+canvas {
+    outline: 2px solid #1d1c2a;
+    image-rendering: pixelated;
+    margin: auto; 
+}
