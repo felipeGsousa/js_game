@@ -6,6 +6,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {pingInterval: 2000, pingTimeout:5000});
 
+const host = "https://felipegsousa.github.io/js_game/"
 const port = 3000;
 
 app.use(express.static("../"))
@@ -40,7 +41,7 @@ io.on('connection', (socket) => {
 
 })
 
-server.listen(port, ()=>{
+server.listen((host,port), ()=>{
     console.log("Server running");
 });
 
