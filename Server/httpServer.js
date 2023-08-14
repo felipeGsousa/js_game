@@ -11,7 +11,7 @@ const port = 3000;
 app.use(express.static("../"))
 
 app.get('/', (req, res)=>{
-    res.sendFile('index.html')
+    res.sendFile('src/'+'index.html')
 })
 
 const players = {
